@@ -35,10 +35,10 @@ const layout = [
 ]
 
 function createBord() {
-    for(let i = 0; i <layout.length; i ++){
+    for(let i = 0; I <layout.length; i ++){
         const square = document.createElement('div')
         grid.appendChild(square) 
         squares.push(square)
     }
 }
-createBord()
+createboard()

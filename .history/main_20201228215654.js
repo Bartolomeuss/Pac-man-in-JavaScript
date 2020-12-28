@@ -1,7 +1,6 @@
 const width = 28
 const grid =document.querySelector('.grid')
 const score = document.querySelector('#score')
-let squares = []
 
 const layout = [
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -35,10 +34,9 @@ const layout = [
 ]
 
 function createBord() {
-    for(let i = 0; i <layout.length; i ++){
+    for(let i = 0; I <layout.length; i ++){
         const square = document.createElement('div')
         grid.appendChild(square) 
-        squares.push(square)
+       squares.push(square)
     }
 }
-createBord()

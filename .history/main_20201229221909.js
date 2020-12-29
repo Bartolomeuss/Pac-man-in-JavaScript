@@ -152,9 +152,9 @@ class ghost {
 }
 
 ghosts = [
-    new ghost('ghost1', 348, 250),
-    new ghost('ghost2', 375, 400),
-    new ghost('ghost3', 350, 350),
-    new ghost('ghost4', 360, 450),
+    new ghost('blinky', 348, 250)
+    new ghost('pinky', 375, 400)
+    new ghost('inky', 350, 350)
+    new ghost('stinky', 360, 450)
 ]
 

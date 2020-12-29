@@ -153,8 +153,8 @@ ghosts = [
     new ghost('ghost1', 348, 250),
     new ghost('ghost2', 375, 400),
     new ghost('ghost3', 350, 350),
-    new ghost('ghost4', 378, 450),
+    new ghost('ghost4', 360, 450),
 ]
 
-ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className))
+ghosts.forEach(ghost => squares[ghost.startIndex])
 

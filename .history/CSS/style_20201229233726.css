@@ -21,8 +21,8 @@ body {
 }
 
 .pac-dot {
-  background-color: greenyellow;
-  border: 5px solid grey;
+  background-color: green;
+  border: 5px solid white;
   box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@ body {
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookcover.co.nz%2Fwp-content%2Fuploads%2F2018%2F10%2Fred-dot15mm.jpg&f=1&nofb=1");
 }
 .empty {
-  background-color: grey;
+  background-color: white;
 }
 
 .pacman {
@@ -46,7 +46,7 @@ body {
 }
 
 .ghost-lair {
-  background-color: grey;
+  background-color: white;
 }
 
 .ghost1 {

@@ -1,0 +1,78 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategrey;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 420px;
+  border: solid 3px black;
+}
+
+.grid div {
+  width: 15px;
+  height: 15px;
+}
+
+.pac-dot {
+  background-color: green;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+.wall {
+  background-color: blue;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak5.picdn.net%2Fshutterstock%2Fvideos%2F21157663%2Fthumb%2F1.jpg&f=1&nofb=1");
+}
+
+.power-pellet {
+  background-color: green;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookcover.co.nz%2Fwp-content%2Fuploads%2F2018%2F10%2Fred-dot15mm.jpg&f=1&nofb=1");
+}
+.empty {
+  background-color: white;
+}
+
+.pacman {
+  background-color: orange;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mapleprimes.com%2Fview.aspx%3Fsf%3D95737%2F279328%2Fpacman.jpg&f=1&nofb=1");
+
+  border: none;
+}
+
+.ghost-lair {
+  background-color: white;
+}
+
+.ghost1 {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a80c8979-22d6-49c7-bca4-97613a4a9237/d5saavl-90d1553d-ed93-4eba-a839-f166189e93a5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTgwYzg5NzktMjJkNi00OWM3LWJjYTQtOTc2MTNhNGE5MjM3XC9kNXNhYXZsLTkwZDE1NTNkLWVkOTMtNGViYS1hODM5LWYxNjYxODllOTNhNS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bFKyUDCsq2K4_DUv5_7-U1vNCcqPssPwP44Yb2YWPOU");
+  /* background-image: url("https://vignette.wikia.nocookie.net/random-ness/images/b/b6/Pacman-red-blinky.sh-600x600.png/revision/latest?cb=20140625023308"); */
+}
+.ghost2 {
+  background-image: url("http://www.clipartbest.com/cliparts/MiL/GLM/MiLGLM9oT.png");
+}
+.ghost3 {
+  background-image: url("https://giantbomb1.cbsistatic.com/uploads/scale_small/8/87790/2469743-orange.png");
+}
+.ghost4 {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/0a08cddb-6691-4dd5-80e8-791ce3bece48/d8sqreq-78ad0ef4-81f5-4a88-87ab-3cbc72191cd9.gif");
+}
+
+.pacman,
+.pac-dot,
+.ghost1,
+.ghost2,
+.ghost3,
+.ghost4 {
+  background-position: center;
+  background-size: contain;
+}
+/* 
+blue https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpisces.bbystatic.com%2Fimage2%2FBestBuy_US%2Fimages%2Fproducts%2F6358%2F6358939_sd.jpg&f=1&nofb=1
+*/

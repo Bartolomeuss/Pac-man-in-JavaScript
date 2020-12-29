@@ -21,8 +21,8 @@ body {
 }
 
 .pac-dot {
-  background-color: greenyellow;
-  border: 5px solid grey;
+  background-color: green;
+  border: 5px solid white;
   box-sizing: border-box;
 }
 
@@ -36,17 +36,17 @@ body {
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookcover.co.nz%2Fwp-content%2Fuploads%2F2018%2F10%2Fred-dot15mm.jpg&f=1&nofb=1");
 }
 .empty {
-  background-color: grey;
+  background-color: white;
 }
 
 .pacman {
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a80c8979-22d6-49c7-bca4-97613a4a9237/d5ru9rv-54e9ddd5-96d0-4652-8ce2-7af77d68ff40.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTgwYzg5NzktMjJkNi00OWM3LWJjYTQtOTc2MTNhNGE5MjM3XC9kNXJ1OXJ2LTU0ZTlkZGQ1LTk2ZDAtNDY1Mi04Y2UyLTdhZjc3ZDY4ZmY0MC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.tQyuvkDIx5fsdnhdP9Ty6Yd_c98kCaUnpBhuZahN7vE");
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a80c8979-22d6-49c7-bca4-97613a4a9237/d5rter9-962b70ca-5192-4700-b120-4ea18b9bccb8.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTgwYzg5NzktMjJkNi00OWM3LWJjYTQtOTc2MTNhNGE5MjM3XC9kNXJ0ZXI5LTk2MmI3MGNhLTUxOTItNDcwMC1iMTIwLTRlYTE4YjliY2NiOC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.EUhZCarjoxlWTdyvUs5nYZagLS5HUluCib0vxazLEwE");
 
   border: none;
 }
 
 .ghost-lair {
-  background-color: grey;
+  background-color: white;
 }
 
 .ghost1 {

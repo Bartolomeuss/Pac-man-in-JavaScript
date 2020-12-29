@@ -21,7 +21,7 @@ body {
 }
 
 .pac-dot {
-  background-color: greenyellow;
+  background-color: green;
   border: 5px solid grey;
   box-sizing: border-box;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .ghost-lair {
-  background-color: grey;
+  background-color: white;
 }
 
 .ghost1 {

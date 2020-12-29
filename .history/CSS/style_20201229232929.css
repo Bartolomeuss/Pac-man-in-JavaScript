@@ -1,0 +1,78 @@
+html,
+body {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategrey;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  height: 420px;
+  border: solid 3px black;
+}
+
+.grid div {
+  width: 15px;
+  height: 15px;
+}
+
+.pac-dot {
+  background-color: green;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+.wall {
+  background-color: blue;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak5.picdn.net%2Fshutterstock%2Fvideos%2F21157663%2Fthumb%2F1.jpg&f=1&nofb=1");
+}
+
+.power-pellet {
+  background-color: green;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookcover.co.nz%2Fwp-content%2Fuploads%2F2018%2F10%2Fred-dot15mm.jpg&f=1&nofb=1");
+}
+.empty {
+  background-color: white;
+}
+
+.pacman {
+  background-color: orange;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mapleprimes.com%2Fview.aspx%3Fsf%3D95737%2F279328%2Fpacman.jpg&f=1&nofb=1");
+
+  border: none;
+}
+
+.ghost-lair {
+  background-color: white;
+}
+
+.ghost1 {
+  background-image: url("https://vignette.wikia.nocookie.net/random-ness/images/b/b6/Pacman-red-blinky.sh-600x600.png/revision/latest?cb=20140625023308");
+}
+.ghost2 {
+  background-image: url("http://www.clipartbest.com/cliparts/MiL/GLM/MiLGLM9oT.png");
+}
+.ghost3 {
+  background-image: url("https://giantbomb1.cbsistatic.com/uploads/scale_small/8/87790/2469743-orange.png");
+}
+.ghost4 {
+  background-color: blue;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpisces.bbystatic.com%2Fimage2%2FBestBuy_US%2Fimages%2Fproducts%2F6358%2F6358939_sd.jpg&f=1&nofb=1");
+}
+
+.pacman,
+.pac-dot,
+.ghost1,
+.ghost2,
+.ghost3,
+.ghost4 {
+  background-position: center;
+  background-size: contain;
+}
+/* 
+blue https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpisces.bbystatic.com%2Fimage2%2FBestBuy_US%2Fimages%2Fproducts%2F6358%2F6358939_sd.jpg&f=1&nofb=1
+*/

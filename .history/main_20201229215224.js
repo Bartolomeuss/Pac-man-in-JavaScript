@@ -130,7 +130,7 @@ function control(e) {
 
 }
 
-
+const classChange = squares[pacmanCurrentIndex]
 
 document.addEventListener('keyup', control,)
 
@@ -139,6 +139,6 @@ function dotEaten(){
     score++ 
     scoreDisplay.textContent = score
     squares[pacmanCurrentIndex].classList.remove('pac-dot')
-    squares[pacmanCurrentIndex].classList.add('empty')
+    classChange.classList.add('empty')
     }
 }

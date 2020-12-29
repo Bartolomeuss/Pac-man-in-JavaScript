@@ -125,12 +125,10 @@ function control(e) {
     break;
 }
     squares[pacmanCurrentIndex].classList.add('pacman')
-    
+    console.log(pacmanCurrentIndex)
     dotEaten()   
 
 }
-
-
 
 document.addEventListener('keyup', control,)
 
@@ -138,7 +136,5 @@ function dotEaten(){
     if(squares[pacmanCurrentIndex].classList.contains('pac-dot')){
     score++ 
     scoreDisplay.textContent = score
-    squares[pacmanCurrentIndex].classList.remove('pac-dot')
-    squares[pacmanCurrentIndex].classList.add('empty')
     }
 }

@@ -125,12 +125,10 @@ function control(e) {
     break;
 }
     squares[pacmanCurrentIndex].classList.add('pacman')
-    
+    console.log(pacmanCurrentIndex)
     dotEaten()   
 
 }
-
-
 
 document.addEventListener('keyup', control,)
 

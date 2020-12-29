@@ -1,13 +1,12 @@
 const width = 28
 const grid =document.querySelector('.grid')
-const scoreDisplay = document.querySelector('#score')
+const score = document.querySelector('#score')
 let squares = [];
 let pacmanCurrentIndex = 490
 let keyCount = 0
-let score = 0
 
 const layout = [
-    1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,
+    1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1,
     1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,
     1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,
     1,3,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,3,1,
@@ -34,7 +33,7 @@ const layout = [
     1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,
     1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,
     1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-    1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,1 
+    1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 
 ]
 
 function createBord() {
@@ -51,8 +50,6 @@ function createBord() {
             squares[i].classList.add('ghost-lair')
         }else if ( layout[i] === 3){
             squares[i].classList.add('power-pellet')
-        }else if ( layout[i] === 4){
-            squares[i].classList.add('empty')
         } 
     }
 }
@@ -73,12 +70,6 @@ function control(e) {
             !squares[pacmanCurrentIndex + width].classList.contains('ghost-lair')&&
             pacmanCurrentIndex + width < width * width){
             pacmanCurrentIndex += width}
-            
-            if (pacmanCurrentIndex === 757){
-                pacmanCurrentIndex = 26}
-            if (pacmanCurrentIndex === 782){
-                pacmanCurrentIndex = 1}
-            
 
         
     break;
@@ -103,11 +94,6 @@ function control(e) {
             !squares[pacmanCurrentIndex -width].classList.contains('wall')&&
             pacmanCurrentIndex - width >= 0){
             pacmanCurrentIndex-= width}
-            
-            if (pacmanCurrentIndex === 26){
-                pacmanCurrentIndex = 757}
-            if (pacmanCurrentIndex === 1){
-                pacmanCurrentIndex = 782}
    
     break;
    
@@ -125,20 +111,8 @@ function control(e) {
     break;
 }
     squares[pacmanCurrentIndex].classList.add('pacman')
-    
-    dotEaten()   
+       
 
 }
-
-
 
 document.addEventListener('keyup', control,)
-
-function dotEaten(){
-    if(squares[pacmanCurrentIndex].classList.contains('pac-dot')){
-    score++ 
-    scoreDisplay.textContent = score
-    squares[pacmanCurrentIndex].classList.remove('pac-dot')
-    squares[pacmanCurrentIndex].classList.add('empty')
-    }
-}

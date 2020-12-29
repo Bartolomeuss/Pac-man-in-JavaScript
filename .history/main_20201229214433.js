@@ -130,8 +130,6 @@ function control(e) {
 
 }
 
-
-
 document.addEventListener('keyup', control,)
 
 function dotEaten(){

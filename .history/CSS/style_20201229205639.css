@@ -33,25 +33,19 @@ body {
 
 .power-pellet {
   background-color: green;
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbookcover.co.nz%2Fwp-content%2Fuploads%2F2018%2F10%2Fred-dot15mm.jpg&f=1&nofb=1");
-  background-position: center;
-  background-size: contain;
-  /* border-radius: 7.5px; */
-  /* border: white; */
-}
-.empty {
-  background-color: white;
+  border-radius: 7.5px;
 }
 
 .pacman {
   background-color: orange;
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.mapleprimes.com%2Fview.aspx%3Fsf%3D95737%2F279328%2Fpacman.jpg&f=1&nofb=1");
-  /* border-radius: 7.5px; */
-  background-position: center;
-  background-size: contain;
+  border-radius: 7.5px;
   border: none;
 }
 
 .ghost-lair {
   background-color: gray;
+}
+
+.empty {
+  background-color: lightgray;
 }

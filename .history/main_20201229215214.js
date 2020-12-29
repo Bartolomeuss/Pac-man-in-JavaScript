@@ -130,7 +130,7 @@ function control(e) {
 
 }
 
-
+const classChange = squares[pacmanCurrentIndex]
 
 document.addEventListener('keyup', control,)
 

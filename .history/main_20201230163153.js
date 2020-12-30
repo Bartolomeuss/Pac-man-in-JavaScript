@@ -159,12 +159,12 @@ const ghosts = [
     new ghost('ghost1', 348, 250),
     new ghost('ghost2', 376, 400),
     new ghost('ghost3', 351, 350),
-    new ghost('ghost4', 379, 450),
+    new ghost('ghost1', 379, 450),
 ]
 // create ghosts
 ghosts.forEach(ghost => {
-squares[ghost.currentIndex].classList.add(ghost.className)
-squares[ghost.currentIndex].classList.add('ghost')
+squares[ghost.startIndex].classList.add(ghost.className)
+squares[ghost.startIndex].classList.add('ghost')
 })
 
 // move ghosts
@@ -180,7 +180,8 @@ function moveGhost(ghost) {
         
         
         if(
-            !squares[ghost.currentIndex + direction].classList.contains('wall') &&
+            
+            !squares[ghost.currentIndex + direction].classList.contains('wall')&&
             !squares[ghost.currentIndex + direction].classList.contains('ghost')
         ){
             squares[ghost.currentIndex].classList.remove(ghost.className)

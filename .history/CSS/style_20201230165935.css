@@ -32,10 +32,9 @@ body {
 }
 
 .power-pellet {
-  background-color: red;
+  background-color: green;
   border-radius: 7.5px;
-  border: gray 3px solid;
-  box-sizing: border-box;
+  border: gray 0, 5px solid;
 }
 .empty {
   background-color: grey;

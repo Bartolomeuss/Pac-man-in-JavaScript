@@ -180,7 +180,8 @@ function moveGhost(ghost) {
         
         
         if(
-            !squares[ghost.currentIndex + direction].classList.contains('wall') &&
+            
+            !squares[ghost.currentIndex + direction].classList.contains('wall')&&
             !squares[ghost.currentIndex + direction].classList.contains('ghost')
         ){
             squares[ghost.currentIndex].classList.remove(ghost.className)

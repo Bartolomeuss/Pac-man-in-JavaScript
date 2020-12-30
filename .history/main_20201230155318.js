@@ -18,12 +18,12 @@ const layout = [
     1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,
     1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,
     1,1,1,1,1,1,0,1,1,4,4,4,4,4,4,4,4,4,4,1,1,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,1,1,4,1,1,1,2,2,1,1,1,4,1,1,0,1,1,1,1,1,1,
     1,1,1,1,1,1,0,1,1,4,1,2,2,2,2,2,2,1,4,1,1,0,1,1,1,1,1,1,
-    1,1,1,1,1,1,0,1,1,4,2,2,2,2,2,2,2,2,4,1,1,0,1,1,1,1,1,1,
-    4,4,4,4,4,4,0,0,0,4,2,2,2,2,2,2,2,2,4,0,0,0,4,4,4,4,4,4,
-    1,1,1,1,1,1,0,1,1,4,2,2,2,2,2,2,2,2,4,1,1,0,1,1,1,1,1,1,
-    1,1,1,1,1,1,0,1,1,4,2,2,2,2,2,2,2,2,4,1,1,0,1,1,1,1,1,1,
+    4,4,4,4,4,4,0,0,0,4,1,2,2,2,2,2,2,1,4,0,0,0,4,4,4,4,4,4,
     1,1,1,1,1,1,0,1,1,4,1,2,2,2,2,2,2,1,4,1,1,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,1,1,4,1,1,1,1,1,1,1,1,4,1,1,0,1,1,1,1,1,1,
+    1,1,1,1,1,1,0,1,1,4,1,1,1,1,1,1,1,1,4,1,1,0,1,1,1,1,1,1,
     1,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,1,
     1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,
     1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,
@@ -159,41 +159,27 @@ const ghosts = [
     new ghost('ghost1', 348, 250),
     new ghost('ghost2', 376, 400),
     new ghost('ghost3', 351, 350),
-    new ghost('ghost4', 379, 450),
+    new ghost('ghost1', 379, 450),
 ]
 // create ghosts
-ghosts.forEach(ghost => {
-squares[ghost.currentIndex].classList.add(ghost.className)
-squares[ghost.currentIndex].classList.add('ghost')
-})
-
+ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className))
 // move ghosts
-ghosts.forEach(ghost => moveGhost(ghost))
+ghosts.forEach(ghost => moveGhosts(WebGLShaderPrecisionFormat))
 
-function moveGhost(ghost) {
-    console.log('moved ghost')
-    const directions = [-1, +1, -width, +width]
-    let direction = directions[Math.floor(Math.random() * directions.length)]
-    console.log(direction)
+
+function moveGhosts(ghost){
     
+    const directions = [ -1, +1, -width, +width]
+    let direction = directions[Math.floor(Math.random()*directions.length)]
+     
+
     ghost.timerId = setInterval(function() {
-        
-        
-        if(
-            !squares[ghost.currentIndex + direction].classList.contains('wall') &&
-            !squares[ghost.currentIndex + direction].classList.contains('ghost')
-        ){
-            squares[ghost.currentIndex].classList.remove(ghost.className)
-            squares[ghost.currentIndex].classList.remove('ghost')
-           
-            ghost.currentIndex += direction
-           
-            squares[ghost.currentIndex].classList.add(ghost.className)
-            squares[ghost.currentIndex].classList.add('ghost')
-        }else direction = directions[Math.floor(Math.random() * directions.length)]
-          
-        
-       
+        //all our code
+        //remove any ghost
+        squares[ghost.currentIndex].
+        //add direction to current Index
+        ghost.currentIndex += direction
+        //add ghost class
+        squares[ghost.currentIndex].classList.add(ghost.className)
     }, ghost.speed )
-    
 }

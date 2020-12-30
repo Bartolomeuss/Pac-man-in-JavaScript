@@ -175,4 +175,4 @@ function moveGhosts(ghost){
 
 
 }
-
+setInterval(console.log('hello'));

@@ -169,10 +169,8 @@ ghosts.forEach(ghost => moveGhosts(WebGLShaderPrecisionFormat))
 
 function moveGhosts(ghost){
     console.log("moved ghost")
-    const directions = [ -1, +1, -width, +width]
-    let randomDirection = directions[Math.floor(Math.random()*directions.length)]
-     console.log(randomDirection);
-
-
+    const direction = [ -1, +1, -width, +width]
+    const random = Math.floor(Math.random()*4)
+    currentIndex += direction[random]
 }
-
+moveGhosts()

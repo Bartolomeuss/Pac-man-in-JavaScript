@@ -172,7 +172,5 @@ function moveGhosts(ghost){
     const directions = [ -1, +1, -width, +width]
     let randomDirection = directions[Math.floor(Math.random()*directions.length)]
      console.log(randomDirection);
-
-
 }
 

@@ -149,9 +149,6 @@ class ghost {
         this.className = className
         this.startIndex = startIndex
         this.speed = speed
-        this.currentIndex = startIndex
-        this.isScared = false
-        this.timerId
     }
 }
 
@@ -161,12 +158,6 @@ ghosts = [
     new ghost('ghost3', 351, 350),
     new ghost('ghost2', 379, 450),
 ]
-// create ghosts
+
 ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className))
-// move ghosts
-ghosts.forEach(ghost => moveGhosts(WebGLShaderPrecisionFormat))
 
-
-function moveGhosts(){
-
-}

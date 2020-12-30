@@ -164,7 +164,7 @@ ghosts = [
 // create ghosts
 ghosts.forEach(ghost => squares[ghost.startIndex].classList.add(ghost.className))
 // move ghosts
-ghosts.forEach(ghost => moveGhosts(WebGLShaderPrecisionFormat))
+ghost.forEach(ghost => moveGhosts(WebGLShaderPrecisionFormat))
 
 
 function moveGhosts(){

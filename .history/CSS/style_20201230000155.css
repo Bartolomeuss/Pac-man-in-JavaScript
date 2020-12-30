@@ -46,7 +46,7 @@ body {
 }
 
 .ghost-lair {
-  /* background-color: grey; */
+  background-color: grey;
 }
 
 .ghost1 {
@@ -61,10 +61,8 @@ body {
   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a80c8979-22d6-49c7-bca4-97613a4a9237/d5sab7r-10689df3-292d-461d-bd70-a7d721baf9ec.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTgwYzg5NzktMjJkNi00OWM3LWJjYTQtOTc2MTNhNGE5MjM3XC9kNXNhYjdyLTEwNjg5ZGYzLTI5MmQtNDYxZC1iZDcwLWE3ZDcyMWJhZjllYy5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.v0d-NOHcM5MQaqcCk5FYfIbUjlsc4CYWsQiz9BMlGto");
 }
 .ghost4 {
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a80c8979-22d6-49c7-bca4-97613a4a9237/d5sab7r-10689df3-292d-461d-bd70-a7d721baf9ec.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTgwYzg5NzktMjJkNi00OWM3LWJjYTQtOTc2MTNhNGE5MjM3XC9kNXNhYjdyLTEwNjg5ZGYzLTI5MmQtNDYxZC1iZDcwLWE3ZDcyMWJhZjllYy5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.v0d-NOHcM5MQaqcCk5FYfIbUjlsc4CYWsQiz9BMlGto");
-  /* background-image: url("/IMG/blue\ ghost.gif");
-  background-image: url("http://img4.wikia.nocookie.net/__cb20130625170116/wreckitralph/images/8/83/Inky8bit.png");
-  background-color: hotpink; */
+  background-color: blue;
+  background-image: url("/IMG/blue\ ghost.gif");
 }
 
 .scared-ghost {
@@ -76,7 +74,7 @@ body {
 .ghost1,
 .ghost2,
 .ghost3,
-.ghost5 .scared-ghost {
+.ghost4 .scared-ghost {
   background-position: center;
   background-size: contain;
 }

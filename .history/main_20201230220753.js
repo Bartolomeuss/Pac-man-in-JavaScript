@@ -1,7 +1,6 @@
 const width = 28
 const grid =document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
-const win =document.querySelector('.message-win')
 let squares = [];
 let pacmanCurrentIndex = 490
 let keyCount = 0
@@ -134,9 +133,7 @@ function control(e) {
     squares[pacmanCurrentIndex].classList.add('pacman')
     
     dotEaten()
-    powerPellet()
-    winGame()
-    gameOver()   
+    powerPellet()   
 
 }
 
@@ -236,8 +233,7 @@ function moveGhost(ghost) {
             squares[ghost.currentIndex].classList.add(ghost.className, 'ghost')
 
         }
-        
-       
+        gameOver()
     }, ghost.speed )
     
 }
@@ -249,21 +245,16 @@ function gameOver(){
         ghosts.forEach(ghost => clearInterval(ghost.timerId))
         document.removeEventListener('keyup', control)
         scoreDisplay.textContent =`You lose with ${score} points `
-        
+        alert('GAME OVER!')
     }
     
 }
 
 function winGame() {
-    if(score >= 27){
+    if(score >= 275){
         ghosts.forEach(ghost => clearInterval(ghost.timerId))
         document.removeEventListener('keyup', control)
         scoreDisplay.textContent =`You win with ${score} points`
-        // squares[ghost.currentIndex].classList.add('scared-ghost')
-        
-        win.style.display = "flex";
-        
-
     }
 
 }

@@ -107,7 +107,7 @@ blue https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpisces.bbystati
 .message-win {
   background-color: rgb(0, 0, 255, 0.5);
   display: none;
-  /* display: flex; */
+  display: flex;
 }
 
 .message-lose {

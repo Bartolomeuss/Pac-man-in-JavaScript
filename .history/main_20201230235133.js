@@ -1,7 +1,6 @@
 const width = 28
 const grid =document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
-const win =document.querySelector('.message-win')
 let squares = [];
 let pacmanCurrentIndex = 490
 let keyCount = 0
@@ -255,13 +254,13 @@ function gameOver(){
 }
 
 function winGame() {
-    if(score >= 27){
+    if(score >= 270){
         ghosts.forEach(ghost => clearInterval(ghost.timerId))
         document.removeEventListener('keyup', control)
         scoreDisplay.textContent =`You win with ${score} points`
-        // squares[ghost.currentIndex].classList.add('scared-ghost')
-        
-        win.style.display = "flex";
+        squares[ghost.currentIndex].classList.add('scared-ghost')
+        alert('YOU WON!')
+        document.querySelector('.message-win').getElementsByClassName.display = "flex";
         
 
     }

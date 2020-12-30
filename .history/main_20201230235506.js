@@ -261,7 +261,7 @@ function winGame() {
         scoreDisplay.textContent =`You win with ${score} points`
         // squares[ghost.currentIndex].classList.add('scared-ghost')
         
-        win.style.display = "flex";
+        .getElementsByClassName.display = "flex";
         
 
     }

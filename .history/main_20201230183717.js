@@ -1,7 +1,6 @@
 const width = 28
 const grid =document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
-const win =document.querySelector('.message-win')
 let squares = [];
 let pacmanCurrentIndex = 490
 let keyCount = 0
@@ -134,9 +133,7 @@ function control(e) {
     squares[pacmanCurrentIndex].classList.add('pacman')
     
     dotEaten()
-    powerPellet()
-    winGame()
-    gameOver()   
+    powerPellet()   
 
 }
 
@@ -158,7 +155,7 @@ function powerPellet(){
         squares[pacmanCurrentIndex].classList.remove('power-pellet')
         squares[pacmanCurrentIndex].classList.add('empty')
         
-        ghosts.forEach(ghost => ghost.isScared = true)
+        ghost.forEach(ghost => ghost.isScared = true)
         
         setTimeout(unScare,10000)
 
@@ -167,7 +164,7 @@ function powerPellet(){
 }
 
 function unScare() {
-    ghosts.forEach(ghost => ghost.isScared = false)
+    ghost.forEach(ghost => ghosts.isScared) = false
 }
 
 class ghost {
@@ -197,10 +194,10 @@ squares[ghost.currentIndex].classList.add('ghost')
 ghosts.forEach(ghost => moveGhost(ghost))
 
 function moveGhost(ghost) {
-    
+    console.log('moved ghost')
     const directions = [-1, +1, -width, +width]
     let direction = directions[Math.floor(Math.random() * directions.length)]
-    
+    console.log(direction)
     
     ghost.timerId = setInterval(function() {
         
@@ -210,7 +207,7 @@ function moveGhost(ghost) {
             !squares[ghost.currentIndex + direction].classList.contains('ghost')
         ){
             squares[ghost.currentIndex].classList.remove(ghost.className)
-            squares[ghost.currentIndex].classList.remove('ghost', 'scared-ghost')
+            squares[ghost.currentIndex].classList.remove('ghost')
            
             ghost.currentIndex += direction
            
@@ -218,52 +215,11 @@ function moveGhost(ghost) {
             squares[ghost.currentIndex].classList.add('ghost')
         }else direction = directions[Math.floor(Math.random() * directions.length)]
           
-        if(ghost.isScared === true){
+        if(ghost.isScared){
             squares[ghost.currentIndex].classList.add('scared-ghost')
         }
 
-        if(ghost.currentIndex === pacmanCurrentIndex || !ghost.isScared){
-            
-        }
 
-        if(ghost.isScared && 
-            squares[ghost.currentIndex].classList.contains('pacman')){
-            squares[ghost.currentIndex].classList.remove(ghost.className, 'ghost', 'scared-ghost' )
-            
-            ghost.currentIndex =ghost.startIndex
-            score += 100
-            scoreDisplay.textContent = score
-            squares[ghost.currentIndex].classList.add(ghost.className, 'ghost')
-
-        }
-        
-       
     }, ghost.speed )
     
-}
-
-function gameOver(){
-    if(squares[pacmanCurrentIndex].classList.contains('ghost') && 
-    !squares[pacmanCurrentIndex].classList.contains('scared-ghost') ){
-
-        ghosts.forEach(ghost => clearInterval(ghost.timerId))
-        document.removeEventListener('keyup', control)
-        scoreDisplay.textContent =`You lose with ${score} points `
-        
-    }
-    
-}
-
-function winGame() {
-    if(score >= 27){
-        ghosts.forEach(ghost => clearInterval(ghost.timerId))
-        document.removeEventListener('keyup', control)
-        scoreDisplay.textContent =`You win with ${score} points`
-        // squares[ghost.currentIndex].classList.add('scared-ghost')
-        
-        win.style.display = "flex";
-        
-
-    }
-
 }

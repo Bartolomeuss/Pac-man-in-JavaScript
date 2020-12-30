@@ -91,26 +91,10 @@ blue https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpisces.bbystati
 .right {
   transform: scaleX(-1);
 }
-.message-lose,
-.message-win {
+.message {
   width: 200px;
   height: 200px;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  align-items: center;
-  margin: 250px 113px;
-  border-radius: 50px;
-}
-
-.message-win {
-  background-color: rgb(0, 0, 255, 0.5);
-  display: none;
-  /* display: flex; */
-}
-
-.message-lose {
-  background-color: rgb(255, 0, 0, 0.5);
-  display: none;
+  background: red;
+  margin: 0 auto;
 }

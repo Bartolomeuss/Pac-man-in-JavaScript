@@ -1,7 +1,6 @@
 const width = 28
 const grid =document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
-const win =document.querySelector('.message-win')
 let squares = [];
 let pacmanCurrentIndex = 490
 let keyCount = 0
@@ -261,7 +260,7 @@ function winGame() {
         scoreDisplay.textContent =`You win with ${score} points`
         // squares[ghost.currentIndex].classList.add('scared-ghost')
         
-        win.style.display = "flex";
+        document.querySelector('.message-win').getElementsByClassName.display = "flex";
         
 
     }
